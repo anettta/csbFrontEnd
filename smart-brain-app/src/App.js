@@ -11,9 +11,7 @@ import Register from "./components/Register/Register";
 import { Component } from "react";
 import Clarifai from "clarifai";
 
-const app = new Clarifai.App({
-  apiKey: "9953bc2236614c848389cecd9b67cfd5",
-});
+export const app = `${process.env.API_KEY}`;
 
 const particlesOptions = {
   particles: {
